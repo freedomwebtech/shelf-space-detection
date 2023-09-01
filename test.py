@@ -20,7 +20,8 @@ cv2.setMouseCallback('RGB', RGB)
 while True:
     ret,frame=cap.read()
     if not ret:
-        break
+       cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
+       continue
     frame=cv2.resize(frame,(1020,800))
 
     cv2.imshow("RGB",frame)
