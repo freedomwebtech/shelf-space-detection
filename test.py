@@ -1,5 +1,5 @@
 import cv2
-import pickle
+
 
   
 cap=cv2.VideoCapture('sf3.mp4')
