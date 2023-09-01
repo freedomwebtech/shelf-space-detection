@@ -25,7 +25,7 @@ while True:
     frame=cv2.resize(frame,(1020,800))
 
     cv2.imshow("RGB",frame)
-    if cv2.waitKey(0) & 0xFF == 27:
+    if cv2.waitKey(100) & 0xFF == 27:
         break
 cap.release()    
 cv2.destroyAllWindows()     
