@@ -31,7 +31,6 @@ while True:
         break
     frame=cv2.resize(frame,(1020,800))
 
-    cv2.rectangle(frame,(429,182),(498,381),(0,0,255),2)
     cv2.imshow("RGB",frame)
 #    cv2.setMouseCallback("FRAME",drawing)
     if cv2.waitKey(0) & 0xFF == 27:
